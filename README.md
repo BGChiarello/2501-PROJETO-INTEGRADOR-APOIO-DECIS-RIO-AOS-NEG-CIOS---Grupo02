@@ -28,6 +28,7 @@ A proposta é organizar e analisar os dados demográficos por meio de processos 
 ├── ddl/                     # Scripts de criação das tabelas (DDL)
 ├── dml/                     # Scripts de carga de dados (DML)
 └── olap/                    # Consultas OLAP em SQL
+```bash
 ---
 
 ## 🧩 Detalhamento Técnico
