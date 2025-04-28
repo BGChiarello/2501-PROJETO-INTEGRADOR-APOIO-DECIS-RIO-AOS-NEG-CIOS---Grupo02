@@ -24,7 +24,7 @@ A proposta é organizar e analisar os dados demográficos por meio de processos 
 .
 ├── README.md                # Este documento
 ├── docs/                    # Evidências e gráficos OLAP
-├── data/                    # Base de dados original (Excel/CSV)
+├── data/                    # Base de dados original (Excel/CSV), Arquivo 1º Entrega corrigido (PDF)
 ├── ddl/                     # Scripts de criação das tabelas (DDL)
 ├── dml/                     # Scripts de carga de dados (DML)
 └── olap/                    # Consultas OLAP em SQL
