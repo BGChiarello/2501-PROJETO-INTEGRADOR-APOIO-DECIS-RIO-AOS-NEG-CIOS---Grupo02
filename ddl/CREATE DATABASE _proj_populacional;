@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS proj_populacional;
+USE proj_populacional;
+
+CREATE TABLE populacao (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ano INT NOT NULL,
+    idade INT NOT NULL,
+    sexo VARCHAR(10),           
+    codigo INT,                 
+    sigla CHAR(2),             
+    local VARCHAR(50),         
+    populacao BIGINT
+);
