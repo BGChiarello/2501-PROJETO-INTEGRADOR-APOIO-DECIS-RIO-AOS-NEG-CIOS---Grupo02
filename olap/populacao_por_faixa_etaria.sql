@@ -1,3 +1,5 @@
+-- Mostra o total populacional agrupado por sigla da localidade, década (2024-2070) e faixas de idade (0-120+ anos)
+
 WITH decadas AS (
     SELECT DISTINCT
         ano,
