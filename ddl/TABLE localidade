@@ -1,6 +1,6 @@
 CREATE TABLE localidade (
-    id_localidade INT PRIMARY KEY AUTO_INCREMENT,
-    cod_ibge INT,
-    sigla VARCHAR(2),
-    nome VARCHAR(100)
+    id_localidade INT PRIMARY KEY,
+    cod_ibge INT NOT NULL UNIQUE, -- Código IBGE deve ser único
+    sigla VARCHAR(2) NOT NULL,    -- Sigla do estado ou localidade
+    nome VARCHAR(100) NOT NULL    -- Nome da localidade (ex: "Brasil", "São Paulo")
 );
