@@ -1,0 +1,4 @@
+CREATE TABLE sexo (
+    id_sexo INT PRIMARY KEY AUTO_INCREMENT,
+    descricao VARCHAR(10) -- Ex: 'Masculino', 'Feminino', 'Ambos'
+);

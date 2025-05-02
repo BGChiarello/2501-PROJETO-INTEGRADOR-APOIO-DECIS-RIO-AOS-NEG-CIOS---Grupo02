@@ -1,0 +1,7 @@
+-- População por região e ano
+SELECT ano, 
+       regiao, 
+       SUM(populacao) AS total_populacao
+FROM populacao
+GROUP BY ano, regiao
+ORDER BY ano DESC, total_populacao DESC;

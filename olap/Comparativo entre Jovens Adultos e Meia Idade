@@ -1,0 +1,7 @@
+-- Comparativo entre Jovens Adultos e Meia Idade
+SELECT ano,
+       SUM(CASE WHEN faixa_etaria = 'Jovem (21 a 26 anos)' THEN populacao ELSE 0 END) AS jovens,
+       SUM(CASE WHEN faixa_etaria = 'Meia Idade (41 a 65 anos)' THEN populacao ELSE 0 END) AS meia_idade
+FROM populacao
+GROUP BY ano
+ORDER BY ano;

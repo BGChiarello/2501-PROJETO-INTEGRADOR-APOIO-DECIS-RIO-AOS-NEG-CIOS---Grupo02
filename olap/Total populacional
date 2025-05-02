@@ -1,0 +1,6 @@
+-- Total populacional por faixa etária, agrupado por faixa etária e ordenado pela população
+SELECT faixa_etaria, 
+       SUM(populacao) AS total_populacao
+FROM populacao
+GROUP BY faixa_etaria
+ORDER BY total_populacao DESC;
