@@ -1,0 +1,4 @@
+INSERT INTO sexo (id_sexo, descricao) VALUES
+(1, 'Masculino'),
+(2, 'Feminino'),
+(3, 'Ambos');
