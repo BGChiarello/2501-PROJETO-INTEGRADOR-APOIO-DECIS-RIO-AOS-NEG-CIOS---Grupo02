@@ -1,4 +1,0 @@
-CREATE TABLE faixa_etaria (
-  id_faixa INT PRIMARY KEY,
-  idade INT NOT NULL
-);
