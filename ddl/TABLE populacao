@@ -1,11 +1,10 @@
 CREATE TABLE populacao (
     id_populacao INT PRIMARY KEY AUTO_INCREMENT,
-    id_faixa INT,
-    id_sexo INT,
-    id_localidade INT,
-    ano YEAR,
-    estimativa BIGINT,
-
+    id_faixa INT, 
+    id_sexo INT,  
+    id_localidade INT,  
+    ano INT,  
+    estimativa INT,  
     FOREIGN KEY (id_faixa) REFERENCES faixa_etaria(id_faixa),
     FOREIGN KEY (id_sexo) REFERENCES sexo(id_sexo),
     FOREIGN KEY (id_localidade) REFERENCES localidade(id_localidade)
