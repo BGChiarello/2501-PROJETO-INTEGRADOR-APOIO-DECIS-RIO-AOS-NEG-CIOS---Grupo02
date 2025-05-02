@@ -1,4 +1,6 @@
 CREATE TABLE faixa_etaria (
-    id_faixa INT PRIMARY KEY AUTO_INCREMENT,
-    idade INT -- ou VARCHAR se for agrupada (ex: "0-4", "5-9")
+    id_faixa INT PRIMARY KEY,
+    idade_min INT NOT NULL,  -- idade mínima da faixa
+    idade_max INT NOT NULL,  -- idade máxima da faixa
+    descricao VARCHAR(30)    -- descrição opcional da faixa
 );
