@@ -1,10 +1,10 @@
 CREATE TABLE populacao (
-    id_populacao INT PRIMARY KEY AUTO_INCREMENT,  -- Identificador único para cada registro
-    idade INT NOT NULL,                           -- Idade da população
-    sexo VARCHAR(1) NOT NULL,                     -- Sexo (M/F)
-    cod_ibge INT NOT NULL,                        -- Código da localidade (cod_ibge)
-    sigla VARCHAR(2) NOT NULL,                    -- Sigla do estado ou localidade
-    local VARCHAR(100) NOT NULL,                  -- Nome da localidade
+    id_populacao INT PRIMARY KEY AUTO_INCREMENT,
+    idade INT NOT NULL,
+    sexo VARCHAR(1) NOT NULL,
+    cod_ibge INT NOT NULL,
+    sigla VARCHAR(2) NOT NULL,
+    local VARCHAR(100) NOT NULL,
     pop_2000 INT, pop_2001 INT, pop_2002 INT, pop_2003 INT, pop_2004 INT,
     pop_2005 INT, pop_2006 INT, pop_2007 INT, pop_2008 INT, pop_2009 INT,
     pop_2010 INT, pop_2011 INT, pop_2012 INT, pop_2013 INT, pop_2014 INT,
@@ -19,5 +19,5 @@ CREATE TABLE populacao (
     pop_2055 INT, pop_2056 INT, pop_2057 INT, pop_2058 INT, pop_2059 INT,
     pop_2060 INT, pop_2061 INT, pop_2062 INT, pop_2063 INT, pop_2064 INT,
     pop_2065 INT, pop_2066 INT, pop_2067 INT, pop_2068 INT, pop_2069 INT,
-    pop_2070 INT                                     -- População do ano de 2070
+    pop_2070 INT
 );
