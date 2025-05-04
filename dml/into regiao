@@ -1,4 +1,4 @@
-INSERT INTO localidade (id_localidade, cod_ibge, sigla, nome) VALUES
+INSERT INTO regiao (id_regiao, cod_ibge, sigla, nome) VALUES
 (1, 0, 'BR', 'Brasil'),
 (2, 1, 'NO', 'Norte'),
 (3, 2, 'ND', 'Nordeste'),
