@@ -1,0 +1,10 @@
+SELECT DISTINCT
+    f.descricao AS faixa_etaria,
+    p.sexo,
+    AVG(p.pop_2024) OVER (PARTITION BY f.descricao, p.sexo ORDER BY p.idade) AS media_populacao_2024
+FROM 
+    populacao p
+JOIN 
+    faixa_etaria f ON p.idade BETWEEN f.idade_min AND f.idade_max
+ORDER BY 
+    f.descricao, p.sexo;

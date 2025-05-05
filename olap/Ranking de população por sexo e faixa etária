@@ -1,0 +1,15 @@
+SELECT DISTINCT
+    CASE 
+        WHEN idade BETWEEN 0 AND 4 THEN '0-4'
+        WHEN idade BETWEEN 5 AND 9 THEN '5-9'
+        WHEN idade BETWEEN 10 AND 14 THEN '10-14'
+        -- Adicionar outras faixas etárias conforme necessário
+    END AS faixa_etaria,
+    sexo,
+    RANK() OVER (PARTITION BY sexo ORDER BY SUM(pop_2024) DESC) AS rank_populacao
+FROM 
+    populacao
+GROUP BY 
+    faixa_etaria, sexo
+ORDER BY 
+    faixa_etaria, sexo, rank_populacao;

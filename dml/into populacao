@@ -5,7 +5,7 @@ FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
-(idade, sexo, cod_ibge, sigla, local,
+(idade, sexo, cod_ibge, sigla, regiao,
 pop_2000, pop_2001, pop_2002, pop_2003, pop_2004, pop_2005, pop_2006, pop_2007, pop_2008, pop_2009,
 pop_2010, pop_2011, pop_2012, pop_2013, pop_2014, pop_2015, pop_2016, pop_2017, pop_2018, pop_2019,
 pop_2020, pop_2021, pop_2022, pop_2023, pop_2024, pop_2025, pop_2026, pop_2027, pop_2028, pop_2029,

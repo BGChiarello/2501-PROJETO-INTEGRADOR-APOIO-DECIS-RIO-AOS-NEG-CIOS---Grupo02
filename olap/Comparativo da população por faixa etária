@@ -1,8 +1,0 @@
--- Comparativo da população por faixa etária, região e ano
-SELECT ano, 
-       regiao, 
-       faixa_etaria,
-       SUM(populacao) AS total_populacao
-FROM populacao
-GROUP BY ano, regiao, faixa_etaria
-ORDER BY ano DESC, regiao, total_populacao DESC;
