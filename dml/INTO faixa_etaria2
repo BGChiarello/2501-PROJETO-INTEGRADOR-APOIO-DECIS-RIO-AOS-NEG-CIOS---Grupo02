@@ -1,4 +1,4 @@
-INSERT INTO faixa_etaria (id_faixa, descricao) VALUES
+INSERT INTO faixa_etaria2 (id_faixa, descricao) VALUES
 (1, 'Bebês (0 a 2 anos)'),
 (2, '1ª Infância (3 a 4 anos)'),
 (3, '2ª Infância (5 a 10 anos)'),
