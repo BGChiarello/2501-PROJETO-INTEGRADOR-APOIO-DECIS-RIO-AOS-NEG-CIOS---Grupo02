@@ -1,0 +1,4 @@
+CREATE TABLE faixa_etaria2 (
+	idade INT,
+    faixa_nome VARCHAR(50)
+);
