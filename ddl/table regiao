@@ -1,0 +1,6 @@
+CREATE TABLE regiao (
+    id_regiao INT PRIMARY KEY,
+    cod_ibge INT NOT NULL UNIQUE, -- Código IBGE deve ser único
+    sigla VARCHAR(2) NOT NULL,    -- Sigla do estado ou localidade
+    nome VARCHAR(100) NOT NULL    -- Nome da localidade (ex: "Brasil", "São Paulo")
+);

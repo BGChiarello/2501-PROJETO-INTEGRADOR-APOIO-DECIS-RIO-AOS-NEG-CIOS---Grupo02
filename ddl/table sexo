@@ -1,0 +1,4 @@
+CREATE TABLE sexo (
+    id_sexo INT PRIMARY KEY,
+    descricao VARCHAR(20) NOT NULL
+);

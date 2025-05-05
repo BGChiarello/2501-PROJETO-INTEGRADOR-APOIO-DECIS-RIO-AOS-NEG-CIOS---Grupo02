@@ -1,6 +1,0 @@
-CREATE TABLE localidade (
-    id_localidade INT PRIMARY KEY AUTO_INCREMENT,
-    cod_ibge INT,
-    sigla VARCHAR(2),
-    nome VARCHAR(100)
-);
