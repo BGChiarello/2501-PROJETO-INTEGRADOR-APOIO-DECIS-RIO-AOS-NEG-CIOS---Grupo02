@@ -1,7 +1,0 @@
--- Evolução da população idosa (66+)
-SELECT ano, 
-       SUM(populacao) AS total_idosos
-FROM populacao
-WHERE faixa_etaria IN ('Terceira Idade (66 a 80 anos)', 'Quarta Idade (80+ anos)')
-GROUP BY ano
-ORDER BY ano;
