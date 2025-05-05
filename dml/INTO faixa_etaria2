@@ -1,0 +1,11 @@
+INSERT INTO faixa_etaria (id_faixa, descricao) VALUES
+(1, 'Bebês (0 a 2 anos)'),
+(2, '1ª Infância (3 a 4 anos)'),
+(3, '2ª Infância (5 a 10 anos)'),
+(4, 'Pré-adolescência (11 a 15 anos)'),
+(5, 'Adolescência (16 a 20 anos)'),
+(6, 'Jovem (21 a 26 anos)'),
+(7, 'Adulto (27 a 40 anos)'),
+(8, 'Meia Idade (41 a 65 anos)'),
+(9, 'Terceira Idade (66 a 80 anos)'),
+(10, 'Quarta Idade (80+ anos)');
