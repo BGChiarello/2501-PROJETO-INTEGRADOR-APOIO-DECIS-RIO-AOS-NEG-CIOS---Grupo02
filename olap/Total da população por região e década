@@ -1,0 +1,84 @@
+WITH anos AS (
+    SELECT 2024 AS ano UNION ALL SELECT 2025 UNION ALL SELECT 2026 UNION ALL SELECT 2027 UNION ALL SELECT 2028 UNION ALL
+    SELECT 2029 UNION ALL SELECT 2030 UNION ALL SELECT 2031 UNION ALL SELECT 2032 UNION ALL SELECT 2033 UNION ALL
+    SELECT 2034 UNION ALL SELECT 2035 UNION ALL SELECT 2036 UNION ALL SELECT 2037 UNION ALL SELECT 2038 UNION ALL
+    SELECT 2039 UNION ALL SELECT 2040 UNION ALL SELECT 2041 UNION ALL SELECT 2042 UNION ALL SELECT 2043 UNION ALL
+    SELECT 2044 UNION ALL SELECT 2045 UNION ALL SELECT 2046 UNION ALL SELECT 2047 UNION ALL SELECT 2048 UNION ALL
+    SELECT 2049 UNION ALL SELECT 2050 UNION ALL SELECT 2051 UNION ALL SELECT 2052 UNION ALL SELECT 2053 UNION ALL
+    SELECT 2054 UNION ALL SELECT 2055 UNION ALL SELECT 2056 UNION ALL SELECT 2057 UNION ALL SELECT 2058 UNION ALL
+    SELECT 2059 UNION ALL SELECT 2060 UNION ALL SELECT 2061 UNION ALL SELECT 2062 UNION ALL SELECT 2063 UNION ALL
+    SELECT 2064 UNION ALL SELECT 2065 UNION ALL SELECT 2066 UNION ALL SELECT 2067 UNION ALL SELECT 2068 UNION ALL
+    SELECT 2069 UNION ALL SELECT 2070
+),
+decadas AS (
+    SELECT 
+        ano,
+        CONCAT(FLOOR(ano / 10) * 10, '-', FLOOR(ano / 10) * 10 + 9) AS decada
+    FROM anos
+),
+populacao_total AS (
+    SELECT 
+        p.regiao,
+        d.decada,
+        SUM(
+            CASE d.ano
+                WHEN 2024 THEN p.pop_2024
+                WHEN 2025 THEN p.pop_2025
+                WHEN 2026 THEN p.pop_2026
+                WHEN 2027 THEN p.pop_2027
+                WHEN 2028 THEN p.pop_2028
+                WHEN 2029 THEN p.pop_2029
+                WHEN 2030 THEN p.pop_2030
+                WHEN 2031 THEN p.pop_2031
+                WHEN 2032 THEN p.pop_2032
+                WHEN 2033 THEN p.pop_2033
+                WHEN 2034 THEN p.pop_2034
+                WHEN 2035 THEN p.pop_2035
+                WHEN 2036 THEN p.pop_2036
+                WHEN 2037 THEN p.pop_2037
+                WHEN 2038 THEN p.pop_2038
+                WHEN 2039 THEN p.pop_2039
+                WHEN 2040 THEN p.pop_2040
+                WHEN 2041 THEN p.pop_2041
+                WHEN 2042 THEN p.pop_2042
+                WHEN 2043 THEN p.pop_2043
+                WHEN 2044 THEN p.pop_2044
+                WHEN 2045 THEN p.pop_2045
+                WHEN 2046 THEN p.pop_2046
+                WHEN 2047 THEN p.pop_2047
+                WHEN 2048 THEN p.pop_2048
+                WHEN 2049 THEN p.pop_2049
+                WHEN 2050 THEN p.pop_2050
+                WHEN 2051 THEN p.pop_2051
+                WHEN 2052 THEN p.pop_2052
+                WHEN 2053 THEN p.pop_2053
+                WHEN 2054 THEN p.pop_2054
+                WHEN 2055 THEN p.pop_2055
+                WHEN 2056 THEN p.pop_2056
+                WHEN 2057 THEN p.pop_2057
+                WHEN 2058 THEN p.pop_2058
+                WHEN 2059 THEN p.pop_2059
+                WHEN 2060 THEN p.pop_2060
+                WHEN 2061 THEN p.pop_2061
+                WHEN 2062 THEN p.pop_2062
+                WHEN 2063 THEN p.pop_2063
+                WHEN 2064 THEN p.pop_2064
+                WHEN 2065 THEN p.pop_2065
+                WHEN 2066 THEN p.pop_2066
+                WHEN 2067 THEN p.pop_2067
+                WHEN 2068 THEN p.pop_2068
+                WHEN 2069 THEN p.pop_2069
+                WHEN 2070 THEN p.pop_2070
+            END
+        ) AS total_populacao
+    FROM populacao p
+    CROSS JOIN decadas d
+    GROUP BY p.regiao, d.decada
+)
+
+SELECT 
+    regiao,
+    decada,
+    total_populacao
+FROM populacao_total
+ORDER BY regiao, decada;
