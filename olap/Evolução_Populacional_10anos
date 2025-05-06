@@ -1,0 +1,10 @@
+SELECT 
+    idade, 
+    sexo,
+    SUM(pop_2025) AS pop_2025, 
+    SUM(pop_2035) AS pop_2035, 
+    SUM(pop_2045) AS pop_2045, 
+    SUM(pop_2055) AS pop_2055 
+FROM populacao
+GROUP BY idade, sexo
+ORDER BY idade, sexo;
