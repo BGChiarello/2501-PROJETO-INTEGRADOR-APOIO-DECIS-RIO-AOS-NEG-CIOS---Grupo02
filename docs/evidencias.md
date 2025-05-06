@@ -1,6 +1,9 @@
 # Evidências Visuais - Operações OLAP
 
-## 📊 População Total por Faixa Etária (2024-2070)
+## 📊 População Total por Faixa Etária (2024 a 2070)
+![Gráfico por Faixa Etária Décadas](grafico_faixa_etaria_decadas.png)
+
+## 📊 População Total por Faixa Etária (2024 a 2070)
 ![Gráfico por Faixa Etária Décadas](grafico_faixa_etaria_decadas.png)
 
 ## 📈 Evolução da População Brasileira (2024 a 2070)
