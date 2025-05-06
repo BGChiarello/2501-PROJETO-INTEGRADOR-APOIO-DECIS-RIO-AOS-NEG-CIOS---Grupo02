@@ -6,4 +6,7 @@
 ## 📈 Evolução da População Brasileira (2024 a 2070)
 ![Gráfico da Evolução da População Brasileira](Proj_PopBrasil_Decadas.png)
 
+## 📈 Evolução da População Brasileira por Faixas Etárias (2024 a 2070)
+![Gráfico da Evolução da População Brasileira por Faixas Etárias](Proj_PopBrasil_FaixasEtarias.png)
+
 > Os gráficos foram gerados com base nas projeções populacionais segmentadas por faixa etária e gênero, disponíveis no diretório `/data`.
