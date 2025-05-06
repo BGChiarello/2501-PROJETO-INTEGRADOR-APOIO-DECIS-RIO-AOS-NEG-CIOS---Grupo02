@@ -1,7 +1,7 @@
 # Evidências Visuais - Operações OLAP
 
 ## 🎥 Vídeo de Apresentação
-📽️ [Assistir: Vídeo de Apresentação do Banco de Dados](docs/video_apresentacao_banco_dados.mp4)
+📽️ [Assistir: Vídeo de Apresentação do Banco de Dados](video_apresentacao_banco_dados.mp4)
 
 ## 📊 População Total por Faixa Etária (2024 a 2070)
 ![Gráfico por Faixa Etária Décadas](grafico_faixa_etaria_decadas.png)
