@@ -73,7 +73,7 @@ Os dashboards gerenciais foram desenvolvidos para facilitar a visualização das
 
 - Projeções por faixa etária até 2070.
 - Análises comparativas por década.
-- Mapas regionais de envelhecimento da população.
+- Gráfico de envelhecimento da população.
 
 ---
 
