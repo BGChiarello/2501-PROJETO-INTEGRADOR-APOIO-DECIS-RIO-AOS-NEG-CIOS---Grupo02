@@ -6,9 +6,6 @@
 ## 📊 População Total por Faixa Etária (2024 a 2070)
 ![Gráfico por Faixa Etária Décadas](Graficos/grafico_faixa_etaria_decadas.png)
 
-## 📊 População Total por Faixa Etária (2024 a 2070)
-![Gráfico por Faixa Etária Décadas](Graficos/grafico_faixa_etaria_decadas.png)
-
 ## 📈 Evolução da População Brasileira (2024 a 2070)
 ![Gráfico da Evolução da População Brasileira](Graficos/Proj_PopBrasil_Decadas.png)
 
