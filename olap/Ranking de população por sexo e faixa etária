@@ -1,9 +1,15 @@
 SELECT DISTINCT
-    CASE 
-        WHEN idade BETWEEN 0 AND 4 THEN '0-4'
-        WHEN idade BETWEEN 5 AND 9 THEN '5-9'
-        WHEN idade BETWEEN 10 AND 14 THEN '10-14'
-        -- Adicionar outras faixas etárias conforme necessário
+    CASE
+        WHEN idade BETWEEN 0 AND 2 THEN 'Bebês (0 a 2 anos)'
+        WHEN idade BETWEEN 3 AND 4 THEN '1ª Infância (3 a 4 anos)'
+        WHEN idade BETWEEN 5 AND 10 THEN '2ª Infância (5 a 10 anos)'
+        WHEN idade BETWEEN 11 AND 15 THEN 'Pré-adolescência (11 a 15 anos)'
+        WHEN idade BETWEEN 16 AND 20 THEN 'Adolescência (16 a 20 anos)'
+        WHEN idade BETWEEN 21 AND 26 THEN 'Jovem (21 a 26 anos)'
+        WHEN idade BETWEEN 27 AND 40 THEN 'Adulto (27 a 40 anos)'
+        WHEN idade BETWEEN 41 AND 65 THEN 'Meia Idade (41 a 65 anos)'
+        WHEN idade BETWEEN 66 AND 80 THEN 'Terceira Idade (66 a 80 anos)'
+        ELSE 'Quarta Idade (80+ anos)'
     END AS faixa_etaria,
     sexo,
     RANK() OVER (PARTITION BY sexo ORDER BY SUM(pop_2024) DESC) AS rank_populacao
@@ -12,4 +18,17 @@ FROM
 GROUP BY 
     faixa_etaria, sexo
 ORDER BY 
-    faixa_etaria, sexo, rank_populacao;
+    FIELD(faixa_etaria, 
+        'Bebês (0 a 2 anos)',
+        '1ª Infância (3 a 4 anos)',
+        '2ª Infância (5 a 10 anos)',
+        'Pré-adolescência (11 a 15 anos)',
+        'Adolescência (16 a 20 anos)',
+        'Jovem (21 a 26 anos)',
+        'Adulto (27 a 40 anos)',
+        'Meia Idade (41 a 65 anos)',
+        'Terceira Idade (66 a 80 anos)',
+        'Quarta Idade (80+ anos)'
+    ),
+    sexo,
+    rank_populacao;
