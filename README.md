@@ -23,7 +23,7 @@ A proposta é organizar e analisar os dados demográficos por meio de processos 
 ```bash
 .
 ├── README.md                # Este documento
-├── docs/                    # Evidências e gráficos OLAP
+├── docs/                    # Evidências e gráficos OLAP, Vídeo de Apresentação do Banco de Dados
 ├── data/                    # Base de dados original (Excel/CSV), Arquivo 1º Entrega corrigido (PDF)
 ├── ddl/                     # Scripts de criação das tabelas (DDL)
 ├── dml/                     # Scripts de carga de dados (DML)
