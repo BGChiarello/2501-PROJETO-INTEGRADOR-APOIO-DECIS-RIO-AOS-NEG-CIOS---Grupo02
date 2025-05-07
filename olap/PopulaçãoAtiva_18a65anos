@@ -1,0 +1,7 @@
+SELECT 
+    SUM(CASE WHEN idade BETWEEN 18 AND 65 THEN pop_2025 ELSE 0 END) AS populacao_ativa_2025,
+    SUM(CASE WHEN idade BETWEEN 18 AND 65 THEN pop_2030 ELSE 0 END) AS populacao_ativa_2030,
+    SUM(CASE WHEN idade BETWEEN 18 AND 65 THEN pop_2040 ELSE 0 END) AS populacao_ativa_2040,
+    SUM(CASE WHEN idade BETWEEN 18 AND 65 THEN pop_2050 ELSE 0 END) AS populacao_ativa_2050,
+    SUM(CASE WHEN idade BETWEEN 18 AND 65 THEN pop_2060 ELSE 0 END) AS populacao_ativa_2060
+FROM populacao;
