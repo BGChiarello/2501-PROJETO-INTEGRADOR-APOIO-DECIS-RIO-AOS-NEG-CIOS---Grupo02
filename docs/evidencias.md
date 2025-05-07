@@ -15,4 +15,4 @@
 > Os gráficos foram gerados com base nas projeções populacionais segmentadas por faixa etária e gênero, disponíveis no diretório `/data`.
 
 ## 🖼️ Galeria de Imagens do Banco de Dados em Funcionamento
-📂 [Acessar pasta com imagens do banco de dados](docs/ImagensBanco)
+📂 [Acessar pasta com imagens do banco de dados](ImagensBanco)
