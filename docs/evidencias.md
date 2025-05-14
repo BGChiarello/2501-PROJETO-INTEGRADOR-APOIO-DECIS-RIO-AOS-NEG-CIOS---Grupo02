@@ -21,4 +21,5 @@
 📂 [Acessar pasta com imagens do banco de dados](ImagensBanco)
 
 ## 📊 Gráficos e Mapas em Power Bi
+![Dashboard Power Bi - Apresentação dos dados](pbix/ModelagemPowerBi.jpeg)
 [Clique para Baixar arquivo PBIX que pode ser aberto no Power Bi Desktop, visualização de mapas e gráficos](pbix/ModelagemPowerBi.pbix)
